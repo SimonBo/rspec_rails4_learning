@@ -1,0 +1,9 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+@import "scaffolds";
+
+body {
+  margin: {
+    top: 60px;
+  }
+}
