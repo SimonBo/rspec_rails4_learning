@@ -23,6 +23,11 @@ feature "News releases" do
   end
 
   context "as a guest" do
-    scenario "reads a news release"
+    scenario "reads a news release" do
+    	visit root_path
+    	click_link "News"
+
+    	expect(page).to_not have_content 'Add News Release'
+    end
   end
 end

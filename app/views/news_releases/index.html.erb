@@ -8,6 +8,8 @@
   <% end %>
 </ul>
 
+<% unless current_user.nil? %>
 <p>
   <%= link_to 'Add News Release', new_news_release_path, class: 'btn btn-primary' %>
 </p>
+<% end %>
